@@ -7,6 +7,7 @@
 
             // creazione base dati
             Prodotto[] arrayDiProdotti = new Prodotto[5];
+            int[] arrayDiNumeri = new int[5];
 
             string[] nomeProdotti =
             {
@@ -47,16 +48,7 @@
             for(int i = 0; i < arrayDiProdotti.Length; i++)
             {
                 Console.WriteLine(Environment.NewLine + $"---- Libro {i+1} ----" + Environment.NewLine);
-                Console.WriteLine("Nome Completo:" + arrayDiProdotti[i].GetNomeCompleto());
-                Console.WriteLine("Nome: " + arrayDiProdotti[i].Nome);
-                Console.WriteLine("Codice: " + arrayDiProdotti[i].Codice);
-                Console.WriteLine("CodiceConPadLeft: " + arrayDiProdotti[i].GetCodiceConPadLeft());
-                Console.WriteLine(" ----- Descrizione ------ ");
-                Console.WriteLine(arrayDiProdotti[i].Descrizione);
-                Console.WriteLine(" ----- Costo ------ ");
-                Console.WriteLine("Prezzo base: euro " + arrayDiProdotti[i].Prezzo);
-                Console.WriteLine("Iva: " + arrayDiProdotti[i].Iva);
-                Console.WriteLine("Prezzo finale: euro " + arrayDiProdotti[i].GetPrezzoFinale());
+                arrayDiProdotti[i].StampaProdotto();
 
             }
         }
