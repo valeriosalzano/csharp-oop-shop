@@ -7,7 +7,6 @@
 
             // creazione base dati
             Prodotto[] arrayDiProdotti = new Prodotto[5];
-            int[] arrayDiNumeri = new int[5];
 
             string[] nomeProdotti =
             {
